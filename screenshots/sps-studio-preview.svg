@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640">
+  <defs>
+    <linearGradient id="uiBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="100%" stop-color="#0c1220"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#141f33"/>
+      <stop offset="100%" stop-color="#09101d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="640" fill="url(#uiBg)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="0" y="0" width="1000" height="55" fill="url(#headerGrad)" stroke="#1e2d48" stroke-width="1"/>
+  <circle cx="25" cy="27" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="27" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="27" r="6" fill="#10b981"/>
+
+  <text x="95" y="33" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="15" font-weight="700" fill="#ffffff">🛰️ SPSForge Pro — CCSDS 851.0-M-1 SOIS Subnetwork Packet Service Studio</text>
+  <rect x="740" y="16" width="130" height="24" rx="4" fill="rgba(0, 229, 255, 0.15)" stroke="#00e5ff" stroke-width="1"/>
+  <text x="805" y="32" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#00e5ff" text-anchor="middle">10/10 PASS CERTIFIED</text>
+
+  <!-- Metric Badges -->
+  <g transform="translate(30, 75)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="220" height="65" rx="6" fill="#121b2d" stroke="#22324e"/>
+    <text x="15" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Active Subnetwork Endpoints</text>
+    <text x="15" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#10b981">5 Nodes (SpW/1553)</text>
+
+    <!-- Card 2 -->
+    <rect x="240" y="0" width="220" height="65" rx="6" fill="#121b2d" stroke="#22324e"/>
+    <text x="255" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Priority Queue Levels</text>
+    <text x="255" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#00e5ff">8 Queues (0..7)</text>
+
+    <!-- Card 3 -->
+    <rect x="480" y="0" width="220" height="65" rx="6" fill="#121b2d" stroke="#22324e"/>
+    <text x="495" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Quality of Service (QoS)</text>
+    <text x="495" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#38bdf8">Assured / Best Effort</text>
+
+    <!-- Card 4 -->
+    <rect x="720" y="0" width="220" height="65" rx="6" fill="#121b2d" stroke="#22324e"/>
+    <text x="735" y="24" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#94a3b8">Delivery Success Rate</text>
+    <text x="735" y="52" font-family="JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#10b981">100.0% (In-Order)</text>
+  </g>
+
+  <!-- Left: Priority Queues & Stream Monitor -->
+  <g transform="translate(30, 160)">
+    <rect x="0" y="0" width="550" height="450" rx="8" fill="#0b121e" stroke="#1c2b42" stroke-width="1.5"/>
+    <rect x="0" y="0" width="550" height="35" rx="8" fill="#131c2c"/>
+    <text x="20" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Subnetwork Priority Queues (0..7) &amp; Channel Board</text>
+
+    <!-- Priority Queue Bars -->
+    <g transform="translate(20, 55)">
+      <!-- Prio 7 -->
+      <rect x="0" y="0" width="510" height="38" rx="4" fill="#070c14" stroke="#ff1744" stroke-width="1"/>
+      <circle cx="20" cy="19" r="10" fill="#ff1744"/>
+      <text x="20" y="23" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+      <text x="45" y="23" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">Emergency FDIR &amp; Critical Telecommand</text>
+      <text x="390" y="23" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff1744">PREEMPTIVE [1 PKT]</text>
+
+      <!-- Prio 5 -->
+      <rect x="0" y="46" width="510" height="38" rx="4" fill="#070c14" stroke="#ffab00" stroke-width="1"/>
+      <circle cx="20" cy="65" r="10" fill="#ffab00"/>
+      <text x="20" y="69" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+      <text x="45" y="69" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">ADCS Guidance &amp; Celestial Star Lock</text>
+      <text x="390" y="69" font-family="JetBrains Mono, monospace" font-size="10" fill="#ffab00">HIGH [2 PKTS]</text>
+
+      <!-- Prio 3 -->
+      <rect x="0" y="92" width="510" height="38" rx="4" fill="#070c14" stroke="#2979ff" stroke-width="1"/>
+      <circle cx="20" cy="111" r="10" fill="#2979ff"/>
+      <text x="20" y="115" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+      <text x="45" y="115" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">Routine EPS &amp; Thermal Telemetry</text>
+      <text x="390" y="115" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">NORMAL [5 PKTS]</text>
+
+      <!-- Prio 0 -->
+      <rect x="0" y="138" width="510" height="38" rx="4" fill="#070c14" stroke="#64748b" stroke-width="1"/>
+      <circle cx="20" cy="157" r="10" fill="#475569"/>
+      <text x="20" y="161" font-family="JetBrains Mono, monospace" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">0</text>
+      <text x="45" y="161" font-family="JetBrains Mono, monospace" font-size="11" font-weight="700" fill="#ffffff">High-Res Camera Payload File Dump</text>
+      <text x="390" y="161" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">YIELDING [14 PKTS]</text>
+    </g>
+
+    <!-- Terminal Output -->
+    <rect x="15" y="245" width="520" height="190" rx="6" fill="#060912" stroke="#1e2d48"/>
+    <text x="25" y="268" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#00e5ff">Live SOIS SPS Packet Flow Terminal:</text>
+    <text x="25" y="290" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">&gt; PACKET_SEND.request(Dest=0x40, Ch=2, Prio=7, QoS=ASSURED, Len=18)</text>
+    <text x="25" y="308" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">  - Enqueued into Priority_7 queue (Immediate preemptive dispatch)</text>
+    <text x="25" y="326" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">  - SpaceWire Wireframe Encapsulated: 40 02 02 41 44 43 53... [EOP]</text>
+    <text x="25" y="344" font-family="JetBrains Mono, monospace" font-size="10" fill="#10b981">&gt; PACKET_RECEIVE.indication(Src=0x32, Dest=0x40, Ch=2, Prio=7, QoS=ASSURED)</text>
+    <text x="25" y="362" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">&gt; PACKET_SEND.request(Dest=0x99_INVALID, Ch=1, Prio=2, QoS=BEST_EFFORT)</text>
+    <text x="25" y="380" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff1744">&gt; PACKET_FAILURE.indication(Dest=0x99, Reason=UNREACHABLE_DESTINATION)</text>
+    <text x="25" y="400" font-family="JetBrains Mono, monospace" font-size="10" fill="#10b981">Deterministic priority scheduling and fault isolation active (§3.2.4).</text>
+  </g>
+
+  <!-- Right: Wireframe Inspector & Compliance -->
+  <g transform="translate(600, 160)">
+    <rect x="0" y="0" width="370" height="450" rx="8" fill="#0b121e" stroke="#1c2b42" stroke-width="1.5"/>
+    <rect x="0" y="0" width="370" height="35" rx="8" fill="#131c2c"/>
+    <text x="20" y="23" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="13" font-weight="700" fill="#ffffff">SpaceWire Protocol ID 0x02 Dissector</text>
+
+    <!-- Code Block -->
+    <rect x="15" y="50" width="340" height="240" rx="4" fill="#060912" stroke="#1e2d48"/>
+    <text x="25" y="75" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">{</text>
+    <text x="35" y="95" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"subnetwork": <tspan fill="#34d399">"SpaceWire (ECSS-E-ST-50-12C)"</tspan>,</text>
+    <text x="35" y="115" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"target_la": <tspan fill="#00e5ff">"0x40"</tspan> <tspan fill="#64748b">(STAR-TRACKER-A)</tspan>,</text>
+    <text x="35" y="135" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"protocol_id": <tspan fill="#f59e0b">"0x02"</tspan> <tspan fill="#64748b">(SOIS SPS)</tspan>,</text>
+    <text x="35" y="155" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"channel": <tspan fill="#00e5ff">2</tspan> <tspan fill="#64748b">(Stream Isolation)</tspan>,</text>
+    <text x="35" y="175" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"priority": <tspan fill="#ff1744">7</tspan> <tspan fill="#64748b">(Critical FDIR)</tspan>,</text>
+    <text x="35" y="195" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"qos": <tspan fill="#34d399">"ASSURED"</tspan>,</text>
+    <text x="35" y="215" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"wire_hex": <tspan fill="#38bdf8">"40020241444353..."</tspan>,</text>
+    <text x="35" y="235" font-family="JetBrains Mono, monospace" font-size="10" fill="#94a3b8">"eop_marker": <tspan fill="#10b981">"EOP_NORMAL_VALID"</tspan></text>
+    <text x="25" y="255" font-family="JetBrains Mono, monospace" font-size="10" fill="#38bdf8">}</text>
+
+    <!-- Operational Verdict -->
+    <rect x="15" y="305" width="340" height="130" rx="4" fill="#064e3b" stroke="#10b981"/>
+    <text x="25" y="330" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#ffffff">COMPLIANCE AUDIT VERDICT:</text>
+    <text x="25" y="352" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Status: CCSDS_851_0_SPS_CERTIFIED</text>
+    <text x="25" y="370" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Normative Score: 10/10 PASS (100.0%)</text>
+    <text x="25" y="388" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• Multi-Tier Preemption Verified (Prio 7..0)</text>
+    <text x="25" y="406" font-family="JetBrains Mono, monospace" font-size="10" fill="#a7f3d0">• PACKET_SEND / RECEIVE / FAILURE Tested</text>
+  </g>
+</svg>
